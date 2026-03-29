@@ -65,6 +65,42 @@ export const DANINHAS_COMUNS = [
   'Caruru', 'Trapoeraba', 'Picão preto',
 ]
 
+// Condições climáticas
+export const CONDICOES_CLIMA: { value: string; label: string; icon: string }[] = [
+  { value: 'sol', label: 'Sol', icon: '☀️' },
+  { value: 'parcialmente_nublado', label: 'Parcialmente nublado', icon: '⛅' },
+  { value: 'nublado', label: 'Nublado', icon: '☁️' },
+  { value: 'chuva', label: 'Chuva', icon: '🌧️' },
+  { value: 'chuva_forte', label: 'Chuva forte', icon: '🌧️' },
+  { value: 'tempestade', label: 'Tempestade', icon: '⛈️' },
+]
+
+export const CONDICOES_CLIMA_MAP: Record<string, { label: string; icon: string }> = {
+  sol: { label: 'Sol', icon: '☀️' },
+  parcialmente_nublado: { label: 'Parc. nublado', icon: '⛅' },
+  nublado: { label: 'Nublado', icon: '☁️' },
+  chuva: { label: 'Chuva', icon: '🌧️' },
+  chuva_forte: { label: 'Chuva forte', icon: '🌧️' },
+  tempestade: { label: 'Tempestade', icon: '⛈️' },
+}
+
+// Cargos da equipe
+export const CARGOS_EQUIPE: { value: string; label: string }[] = [
+  { value: 'agronomo', label: 'Agrônomo' },
+  { value: 'tecnico', label: 'Técnico' },
+  { value: 'estagiario', label: 'Estagiário' },
+  { value: 'gerente', label: 'Gerente' },
+  { value: 'outro', label: 'Outro' },
+]
+
+export const CARGOS_MAP: Record<string, string> = {
+  agronomo: 'Agrônomo',
+  tecnico: 'Técnico',
+  estagiario: 'Estagiário',
+  gerente: 'Gerente',
+  outro: 'Outro',
+}
+
 // Gera label da safra baseado na data
 export function gerarSafraLabel(dataPlantio?: string): string {
   const now = dataPlantio ? new Date(dataPlantio) : new Date()
