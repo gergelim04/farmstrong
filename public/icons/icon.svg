@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#1B5E20"/>
+  <g transform="translate(256,256)">
+    <!-- Planta estilizada -->
+    <line x1="0" y1="60" x2="0" y2="-40" stroke="white" stroke-width="24" stroke-linecap="round"/>
+    <path d="M0,-40 C-60,-100 -100,-60 -60,0" stroke="white" stroke-width="20" fill="none" stroke-linecap="round"/>
+    <path d="M0,-80 C60,-140 100,-100 60,-40" stroke="white" stroke-width="20" fill="none" stroke-linecap="round"/>
+    <path d="M0,0 C-80,-40 -80,20 -30,40" stroke="white" stroke-width="18" fill="none" stroke-linecap="round"/>
+    <path d="M0,0 C80,-40 80,20 30,40" stroke="white" stroke-width="18" fill="none" stroke-linecap="round"/>
+    <!-- Base / solo -->
+    <ellipse cx="0" cy="80" rx="70" ry="14" fill="white" opacity="0.3"/>
+  </g>
+</svg>

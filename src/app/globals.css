@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animação de entrada dos toasts */
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.2s ease-out;
+}
+
+/* Borda de 3px para o spinner (Tailwind não tem border-3) */
+.border-3 {
+  border-width: 3px;
+}
+
+/* Estilos base para melhor UX mobile */
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove setas do input type number no mobile */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* Safe area para iPhone (barra inferior do BottomNav) */
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
